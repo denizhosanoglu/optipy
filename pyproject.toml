@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optipy"
+version = "0.1.0"
+description = "Measure the speed and memory usage of Python code: timing stats, peak memory, GC load, profiling and empirical complexity."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+optipy = "optipy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
